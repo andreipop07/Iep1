@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/EXE.dir/src/Main.cpp.o CMakeFiles/EXE.dir/src/House.cpp.o CMakeFiles/EXE.dir/src/Villa.cpp.o CMakeFiles/EXE.dir/src/Apartment.cpp.o -o EXE 

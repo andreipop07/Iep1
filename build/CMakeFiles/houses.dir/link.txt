@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/houses.dir/src/Main.cpp.o CMakeFiles/houses.dir/src/House.cpp.o CMakeFiles/houses.dir/src/Villa.cpp.o CMakeFiles/houses.dir/src/Apartment.cpp.o -o houses 
