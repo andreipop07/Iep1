@@ -15,6 +15,25 @@ class Apartment:public Villa{
 
     //Apartment(const Apartment &a);
         
+    Apartment& operator=(const Apartment& a){
+        if(this==&a){
+            std::cout<<"Self Apartment"<<std::endl;
+        
+            return *this;
+        }
+        std::cout<<"Copy assignment operator Apartment"<<std::endl;
+
+        House::operator=(a);
+        scale = a.scale;
+        return *this;
+    }
+
+    Apartment& operator+=(const Apartment& a){
+        std::cout<<"Add operator Apartment"<<std::endl;
+        House::operator+=(a);
+        scale += a.scale;
+        return *this;
+    }    
 
     void lightOn(){
         Villa::lightOn();

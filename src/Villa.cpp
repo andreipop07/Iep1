@@ -15,6 +15,26 @@ class Villa:public House{
 
     //Villa(const Villa &v);
 
+    Villa& operator=(const Villa& v){
+        if(this==&v){
+            std::cout<<"Self Villa"<<std::endl;
+
+            return *this;
+        }
+        std::cout<<"Copy assignment operator Villa"<<std::endl;
+
+        House::operator=(v);
+        courtYard = v.courtYard;
+        return *this;
+    }
+
+    Villa& operator+=(const Villa& v){
+        std::cout<<"Add operator Villa"<<std::endl;
+        House::operator+=(v);
+        courtYard += v.courtYard;
+        return *this;
+    }
+
     void getFloors(){
         std::cout<<"Villa number of floors: "<<this->floors<<std::endl;
     }
